@@ -5,7 +5,7 @@ let loginForm = document.querySelector('.login-form-container');
 let formclose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
-
+let imgBtn = document.querySelectorAll('.img-btn');
 window.onscroll = () =>{
     searchbtn.classList.remove('fa-times');
     searchbar.classList.remove('active');
@@ -33,4 +33,11 @@ formclose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
 
-
+imgBtn.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('src');  
+        document.querySelector('#image-slider').src = src;
+    });
+});

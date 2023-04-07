@@ -25,6 +25,9 @@ html{
 
 }
 
+section{
+    padding:2rem;
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -234,9 +237,82 @@ header .search-bar-container label:hover{
     cursor:pointer;
     display: none;
 }
- body{
+ /*body{
     height:300rem;
+ }*/
+
+ .home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow:column;
+    position:relative;
+    z-index:0;
  }
+
+ .home .content{
+    text-align: center;
+ }
+
+ .home .content h3{
+    font-size: 4.5rem;
+    color:mediumspringgreen;
+    
+ }
+
+ .home .content p{
+    font-size:2.5rem;
+    color:thistle;
+    padding: .5rem 0;
+ }
+
+ .home .img-container img{
+    position: absolute;
+    top:0; left:0;
+    z-index:-1;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+ }
+
+ .home .controls{
+    padding:1rem;
+    border-radius:5rem;
+    background-color: #333;
+    position:relative;
+    top:10rem;
+ }
+
+ .home .controls .img-btn{
+    height:2rem;
+    width:2rem;
+    display:inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor:pointer;
+    margin: 0 .5rem;
+ }
+
+ .home .controls .img-btn.active{
+    background-color: coral;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1200px){
     html{
         font-size: 55%;
@@ -246,6 +322,10 @@ header .search-bar-container label:hover{
 @media (max-width:991px){
 header{
     padding: 2rem;
+}
+
+section{
+    padding:2rem;
 }
 
 }
