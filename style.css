@@ -349,6 +349,7 @@ header .search-bar-container label:hover{
 .seminar .box-container box{
     flex:1 1 30rem;
     border-radius: .5rem;
+   
     overflow: hidden;
     box-shadow: 0 1rem 2rem black;
 }
@@ -356,7 +357,7 @@ header .search-bar-container label:hover{
 .seminar .box-container .box img{
    flex:25%;
    width:300px;
-
+   border: 4px solid grey;
     
 }
 
